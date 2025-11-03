@@ -10,7 +10,6 @@ export default function App() {
 
   const handleSelectCategory = useCallback((category) => {
     setSelectedCategory(category);
-    // Smooth scroll to Projects
     if (projectsRef.current) {
       projectsRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
